@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Popup</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+</head>
+<body>
+   
+
+    <main>
+        <h1>Simple Popup</h1>
+        <p>Create a simple popup that blurs out the background with a centered message</p>
+        <button class="pop-show" data-popup="demo-1">Demo 1</button>
+        <button class="pop-show" data-popup="demo-2">Demo 2</button>
+
+    </main>
+
+    <div class="pop-container" id="demo-1">
+        <!-- White out background -->
+        <div class="pop-bg white"></div>
+        <!-- [CONTENT] -->
+        <div class="pop-content"> 
+            <!--- put content here -->
+            <h3>Lorem ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="pop-close" data-popup="demo-1">Close</button>
+        </div>
+        <!-- [/CONTENT] -->
+    </div>
+
+    <div class="pop-container" id="demo-2">
+        <!-- White out background -->
+        <div class="pop-bg white"></div>
+        <!-- [CONTENT] -->
+        <div class="pop-content"> 
+            <!--- put content here -->
+            <h3>Second Popup</h3>
+            <p>This is the second popup.</p>
+            <button class="pop-close" data-popup="demo-2">Close</button>
+        </div>
+        <!-- [/CONTENT] -->
+    </div>
+</body>
+</html>
