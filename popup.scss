@@ -1,0 +1,48 @@
+.pop-container {
+    &:not(.show){
+        display: none;
+    }
+    &.show {
+        .pop-bg{
+            &:not(.white){
+                background-color: black;
+            }
+            background-color: white;
+            opacity: 0.8;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        display: flex;
+        position:fixed;
+        z-index: 999;
+        width:100vw;
+        height:100vh;
+        top:0;
+        left:0;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        .pop-content {
+            background: white;
+            padding: 2rem;
+            z-index: 998;
+            border-radius: 25px;
+        }
+    }
+}
+
+$button-color: #00a0e9;
+main {
+    margin: 0 auto;
+    width:max-content;
+    padding:1em;
+}
+button {
+    border:unset;
+    border-radius: 5px;
+    background: $button-color;
+    color:white;
+    padding:.5em .75em;
+    font-size:1.5em;
+}

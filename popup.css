@@ -1,0 +1,48 @@
+.pop-container:not(.show) {
+  display: none;
+}
+.pop-container.show {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.pop-container.show .pop-bg {
+  background-color: white;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.pop-container.show .pop-bg:not(.white) {
+  background-color: black;
+}
+.pop-container.show .pop-content {
+  background: white;
+  padding: 2rem;
+  z-index: 998;
+  border-radius: 25px;
+}
+
+main {
+  margin: 0 auto;
+  width: max-content;
+  padding: 1em;
+}
+
+button {
+  border: unset;
+  border-radius: 5px;
+  background: #00a0e9;
+  color: white;
+  padding: 0.5em 0.75em;
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=popup.css.map */
